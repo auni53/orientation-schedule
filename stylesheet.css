@@ -1,0 +1,105 @@
+/*
+    Blue:    #3F51B5
+    Red:     #DB2727
+    Orange:  #EF6C00
+    Green:   #4CAF50
+    Gold:    #DCA828
+    Purple:  #9C27B0
+    Teal:    #009688
+    LBlue:   #2196F3
+    ROrange: #F44336
+    Pinky:   #E91E63
+    BGreen:  #024640
+    GGold:   #827717
+    BPurple: #32004B
+    CGrey:   #607D8B
+    DGreen:  #024640
+*/
+
+@font-face { font-family:'Antraste'; 
+             src: url(Antraste.ttf); }
+
+@font-face { font-family:'Gothamm';
+             src: url('Gotham-Bold.otf'); }
+
+
+body    { background-color:#fdfdfd; }
+h1      { font-family:'Antraste'; 
+          font-size:80.78px; 
+          margin-bottom:5px; 
+          margin-top:25px; }
+
+h2      { font-family:'Gotham'; 
+          font-weight:bold; 
+          font-size: 26.5pt; 
+          line-height: 31px; }
+
+hr      { height:0px; 
+          margin:2px; 
+          border-bottom:0px; } 
+
+table, tr, td { border-collapse: collapse; 
+                font-family: Gotham; 
+                font-weight: bold; 
+                text-align: center; 
+                vertical-align: top; }
+
+table#main    { border: 1px solid black; }
+tr            { height: 15px; }
+td            { width: 135px; 
+                border: 2px solid black; 
+                padding: 1px; 
+                margin: 0px; 
+                vertical-align: middle; }
+.one          { width: 0px; }
+.two          { width: 5px; }
+.top          { width:135px; height:69px;}
+.half         { border: none;
+                padding: 0;
+                margin: 0; }
+
+.day    { font-family:'Gotham'; 
+          font-size:36px; 
+          font-weight:bold; 
+          color:white; 
+          background-color:black; 
+          width:135px; 
+          height:69px; 
+          text-align:center; 
+          line-height:69px;
+          margin:0px; }
+
+.event, .eventS
+        { border-radius: 10px; 
+          display: inline-block; 
+          width: 135px; 
+          height: 100%;
+          font-family: 'Gotham';
+          font-weight: bold; 
+          color: white;
+          font-size: 0.9vw;
+          margin: 0;
+          vertical-align: middle;
+          text-align: center;
+
+          transition: all 0.2s;
+          -moz-transition: all 0.2s; /* Firefox 4 */
+          -webkit-transition: all 0.2s; /* Safari and Chrome */
+          -o-transition: all 0.2s; /* Opera */
+          -ms-transition: all 0.2s; /* IE9 (maybe) */ 
+        }
+
+.event:hover, .eventS:hover
+        { transform: scale(1.09);
+}
+
+.eventS { width:66px; height:100%; }
+
+.divS   { width:3px; height:100%; display:table-cell; }
+
+.table  { display:table; width:50px;  }
+
+.cell   { display:table-cell; width:130px; 
+          text-align:center; vertical-align:top; }
+
+#times
