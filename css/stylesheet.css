@@ -56,8 +56,6 @@ hr      { height:0px;
 
 table, tr, td 
         { border-collapse: collapse; 
-          font-family: Gotham; 
-          font-weight: bold; 
           text-align: center; 
           vertical-align: top; }
 
@@ -101,10 +99,10 @@ td      { width: 135px;
           width: 100%; 
           height: 100%;
           
-          font-family: 'Gotham';
+          font-family: 'Gotham', Helvetica, Arial, sans-serif;
           font-weight: bold; 
           color: white;
-          font-size: 0.9vw;
+          font-size: 0.8em;
           position: relative;
 
           transition: all .2s;
@@ -140,7 +138,7 @@ table.half
           height:100%;  
           float:right; }
 
-.cell   { font-weight:Antraste; size: 98.78px; }
+.cell   { font-family:Antraste; size: 98.78px; }
 
 a       { color: inherit; }
 
