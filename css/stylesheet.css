@@ -18,26 +18,13 @@
 
 .container     { width: 100%; }
 
-@media (min-width: 768px) {
-    .container { width: 100%; }
-}
+@font-face 
+        { font-family:'Antraste'; 
+           src: url('res/Antraste.ttf'); }
 
-@media (min-width: 992px) {
-    .container { width: 100%; }
-}
-
-@media (min-width: 1200px) {
-    .container { width: 670px; }
-}
-
-
-
-
-@font-face { font-family:'Antraste'; 
-             src: url('res/Antraste.ttf'); }
-
-@font-face { font-family:'Gothamm';
-             src: url('res/Gotham-Bold.otf'); }
+@font-face 
+        { font-family:'Gothamm';
+          src: url('res/Gotham-Bold.otf'); }
 
 #title  { width: 960px; 
           margin-left: auto; 
@@ -67,15 +54,14 @@ hr      { height:0px;
           margin:2px; 
           border-bottom:0px; } 
 
+#main   { width:1040px; 
+          margin-left: auto;
+          margin-right: auto; }
+
 table, tr, td 
         { border-collapse: collapse; 
           text-align: center; 
           vertical-align: top; }
-
-table#main
-        { width:1040px; 
-          margin-left: auto;
-          margin-right: auto; }
 
 tr      { height: 15px; }
 
@@ -187,4 +173,24 @@ a.back-to-top
           height: 120px; 
           border-radius: 100%; 
           background-size: 100% 100%; }
+
+@media (max-width: 670px) {
+    .container { width: 670px; }
+    .table-container { width: 100%; }
+    #title     { width: 100%; }
+    .td        { width: 300px; }    
+}
+
+@media (min-width: 1200px) {
+    .container { width: 670px; }
+}
+
+.table-container
+        { margin-left: auto;
+          margin-right: auto;
+          overflow: scroll; }
+
+@media (min-width: 1040px) {
+    .table-container { width: 1040px; }
+}
 
