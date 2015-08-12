@@ -161,7 +161,7 @@ a.back-to-top
           text-indent: -9999px;
           position: fixed;
           z-index: 999;
-          left: 20px;
+          left: 220px;
           top: 190px;
           background: #F5F5F5; 
           background: #27AE61 url("../res/backtotop.png") no-repeat center 100%; }
