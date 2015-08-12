@@ -18,6 +18,11 @@
 
 .container     { width: 100%; }
 
+.table-container
+        { margin-left: auto;
+          margin-right: auto;
+          overflow: scroll; }
+
 @font-face 
         { font-family:'Antraste'; 
            src: url('res/Antraste.ttf'); }
@@ -175,7 +180,7 @@ a.back-to-top
           background-size: 100% 100%; }
 
 @media (max-width: 670px) {
-    .container { width: 670px; }
+    .container { width: 100%; }
     .table-container { width: 100%; }
     #title     { width: 100%; }
     .td        { width: 300px; }    
@@ -184,11 +189,6 @@ a.back-to-top
 @media (min-width: 1200px) {
     .container { width: 670px; }
 }
-
-.table-container
-        { margin-left: auto;
-          margin-right: auto;
-          overflow: scroll; }
 
 @media (min-width: 1040px) {
     .table-container { width: 1040px; }
