@@ -1,13 +1,13 @@
-// This auto scrolls the events to the description upon click.
 $(function () {
+
+
+    // This auto scrolls the events to the description upon click.
     $('.panel').on('shown.bs.collapse', function (e) {
         $( e.currentTarget ).ScrollTo();
     });
-});
 
 
-// This manages the "back to top" button.
-$(function () {
+    // This manages the "back to top" button.
     $('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
 
     var amountScrolled = 560;

@@ -16,6 +16,10 @@
     DGreen:  #024640
 */
 
+@media (max-width: 2000px) {
+    .container { width:670px; }
+}
+
 @font-face { font-family:'Antraste'; 
              src: url('res/Antraste.ttf'); }
 
@@ -34,7 +38,7 @@ h1      { font-family:'Antraste';
           margin-bottom:5px; 
           margin-top:25px; }
 
-h2      { font-family:'Gotham'; 
+h2      { font-family:'Gotham', Helvetica, Arial, sans-serif;
           font-weight:bold; 
           font-size: 32pt; 
           line-height: 32px;
@@ -114,6 +118,7 @@ td      { width: 135px;
           left: 50%;
           width: 95%;
           transform: translate(-50%, -50%); 
+          -webkit-transform: translate(-50%, -50%); /* Safari */
           word-wrap: break-word; }
 
 .half   { border: none;
@@ -128,7 +133,6 @@ table.half
 .event:hover, .eventL:hover, .eventR:hover
         { transform: scale(1.04); } 
 
-
 .eventL { width:99%; 
           height:100%;  }
 
@@ -139,6 +143,7 @@ table.half
 .cell   { font-weight:Antraste; size: 98.78px; }
 
 a       { color: inherit; }
+
 a:visited
         { color: inherit; }
 
@@ -172,5 +177,3 @@ a.back-to-top
           border-radius: 100%; 
           background-size: 100% 100%; }
 
-.container 
-        { width:670px; }
