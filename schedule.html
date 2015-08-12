@@ -1,402 +1,1221 @@
 <!doctype HTML>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" />
+    <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-
+    <script src="js/jquery.js"></script>
+    <script src="js/misc.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-scrollto/lib/jquery-scrollto.js"></script>
+</head>
 <body> 
-    <h1>
-    <div class="table" style="font-size:80px">
-        <div class="table"> <div class="cell">views</div> </div>
-        <div class="cell" style="font-size:36px">
-            <div class="table">
-                <div class="cell">from</div>
+
+    <img id="title" src="title.png" style="margin-top:20px">
+    
+
+        <table id="main"> <!-- TABLE START -->
+            <tr>
+                <td class="time"></td>
+                <td class="event" colspan=8>
+                    <!-- Whitespace -->
+                </td>
+            </tr>
+            <tr class="top">
+                <td class="time"></td>
+                <td class="top"><div class="day">SUN</div></td>
+                <td class="top"><div class="day">MON</div></td>
+                <td class="top"><div class="day">TUE</div></td>
+                <td class="top"><div class="day">WED</div></td>
+                <td class="top"><div class="day">THU</div></td>
+                <td class="top"><div class="day">FRI</div></td>
+            </tr>
+            <tr> <!-- 9AM -->
+                
+                <td class="time" rowspan=2>9</td>
+                <td rowspan=14>
+                    <div class="event" style="background:#3F51B5">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#residencemovein"><span class="link">
+                            <div class="text">Residence Move-In</div>
+                        </span></a>
+                    </div>
+                <td colspan=5>
+                    <!-- Whitespace -->
+                </td>
+                <td class="time" rowspan=2>9</td>
+            </tr>
+            <tr> <!-- 9.5AM -->
+                
+                <td rowspan=2>
+                    <div class="event" style="background: #3F51B5;">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#commuterregistration"><span class="link">
+                            <div class="text">Commuter Registration</div>
+                        </span></a>
+                    </div>
+                </td> 
+                <td rowspan=1>
+                    <div class="event" style="background:#DCA828;">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#froshgroups"><span class="link">
+                            <div class="text">Frosh Groups</div>
+                        </span></a>
+                    </div>
+                </td>
+                <td rowspan=1>
+                    <div class="event" style="background:#DCA828;">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#froshgroups"><span class="link">
+                            <div class="text">Frosh Groups</div>
+                        </span></a>
+                    </div>
+                </td>
+                <td rowspan=1>
+                    <div class="event" style="background:#DCA828;">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#froshgroups"><span class="link">
+                            <div class="text">Frosh Groups</div>
+                        </span></a>
+                    </div>
+                </td>
+                <td rowspan=1>
+                    <div class="event" style="background:#DCA828;">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#froshgroups"><span class="link">
+                            <div class="text">Frosh Groups</div>
+                        </span></a>
+                    </div>
+                </td>
+            </tr> 
+            <tr> <!-- 10AM -->
+                
+                <td class="time" rowspan=2>10</td>
+                <td rowspan=2>
+                    <div class="event" style="background: #009688">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#breakfastwithpresidents"><span class="link">
+                            <div class="text">Breakfast With Presidents</div>
+                        </span></a>
+                    </div>
+                </td>
+                <td rowspan=6>
+                    <div class="event" style="background: #3F51B5">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#campustoursutsuclubsfair"><span class="link">
+                            <div class="text">Campus Tours<br>UTSU Clubs Fair</div>
+                        </span></a>
+                    </div>
+                </td>
+                <td rowspan=2>
+                    <div class="eventSplit">
+                        <table class="half" style="height:100%;">
+                         <tr>
+                          <td class="half">
+                            <div class="eventL" style="background: Black">
+                                <a class="block" data-toggle="collapse" data-parent="#accordion" href="#rainbowsprinkles"><span class="link">
+                                    <div class="text">Rainbow Sprinkles</div>
+                                </span></a>
+                            </div>
+                          </td>
+                          <td class="half">
+                            <div class="eventR" style="background: #DB2727; font-size:6px">
+                                <a class="block" data-toggle="collapse" data-parent="#accordion" href="#internationalstudentsreception"><span class="link">
+                                    <div class="text">International Students' Reception</div>
+                                </span></a>
+                            </div>
+                          </td>
+                         </tr>
+                        </table>
+                    </div>
+                </td>
+                <td rowspan=4>
+                    <div class="event" style="background: #4CAF50;">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#carnivalbbqvicclubsfair"><span class="link">
+                            <div class="text">Carnival, BBQ, Vic Clubs Fair</div>
+                        </span></a>
+                </td>
+                <td class="time" rowspan=2>10</td>
+            </tr>
+            <tr> <!-- 10.5AM -->
+                
+                <td rowspan=3>
+                    <div class="event" style="background: #EF6C00;">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#meetyourdons"><span class="link">
+                            <div class="text">Meet Your Dons</div>
+                        </span></a>
+                    </div>
+                </td>
+            </tr>
+            <tr> <!-- 11AM -->
+                
+                <td class="time" rowspan=2>11</td>
+                <td rowspan=3>
+                    <div class="event" style="background: #F44336;">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#registrarswelcome"><span class="link">
+                            <div class="text">Registrar's Welcome</div>
+                        </span></a>
+                    </div>
+                </td>
+                <td rowspan=1>
+                    <div class="event" style="background: #9C27B0;">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#brunchwithinnis"><span class="link">
+                            <div class="text">Brunch with Innis</div>
+                        </span></a>
+                    </div>
+                </td>
+                <td class="time" rowspan=2>11</td>
+            </tr>
+            <tr> <!-- 11.5AM -->
+                
+                <td rowspan=2></td>
+            </tr>
+            <tr> <!-- 12PM -->
+                
+                <td class="time" rowspan=2>12</td>
+                <td rowspan=4>
+                    <div class="event" style="background: #4CAF50">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#grandmeetgreetpizzawithvusac"><span class="link">
+                            <div class="text">Grand Meet & Greet Pizza with VUSAC</div>
+                        </span></a>
+                    </div>
+                </td>
+                <td rowspan=8>
+                    <div class="event" style="background: #DB2727">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#utsuparade"><span class="link">
+                            <div class="text">UTSU Parade</div>
+                        </span></a>
+                    </div>
+                </td>
+                <td class="time" rowspan=2>12</td>
+            </tr>
+            <tr> <!-- 12.5PM -->
+                
+                <td rowspan=2>
+                    <div class="event" style="background: #2196F3">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#guestlecturehumanities"><span class="link">
+                            <div class="text">Guest Lecture: Humanities</div>
+                        </span></a>
+                    </div>
+                </td>
+                <td rowspan=2>
+                    <div class="event" style="background: #2196F3">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#guestlecturesciences"><span class="link">
+                            <div class="text">Guest Lecture: Sciences</div>
+                        </span></a>
+                    </div>
+                </td>
+            </tr>
+            <tr> <!-- 1PM -->
+                
+                <td class="time" rowspan=2>1</td>
+                <td rowspan=3>
+                    <div class="event" style="background: #4CAF50">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#wellnesswednesday"><span class="link">
+                            <div class="text">Wellness Wednesday</div>
+                        </span></a>
+                    </div>
+                </td>
+                <td class="time" rowspan=2>1</td>
+            </tr>
+            <tr> <!-- 1.5PM -->
+                
+                <td rowspan="3">
+                    <div class="event" style="background:#3F51B5">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#guestreceptionhumanities"><span class="link">
+                            <div class="text">Guest Reception: Humanities</div>
+                        </span></a>
+                    </div>
+                </td>
+                <td rowspan="3">
+                    <div class="event" style="background:#3F51B5">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#guestreceptionsciences"><span class="link">
+                            <div class="text">Guest Reception: Sciences</div>
+                        </span></a>
+                    </div>
+                </td>
+            </tr>
+            <tr> <!-- 2PM -->
+                
+                <td class="time" rowspan=2>2</td>
+                <td rowspan=3>
+                    <div class="event" style="background:#DB2727">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#openingceremoniesdeanswelcome"><span class="link">
+                            <div class="text">Opening Ceremonies & Dean's Welcome</div>
+                        </span></a>
+                    </div>
+                </td>
+                <td class="time" rowspan=2>2</td>
+            </tr>
+            <tr> <!-- 2.5PM -->
+                
+                <td rowspan=2>
+                    <!-- whitespace -->
+                </td>
+            </tr>
+            <tr> <!-- 3PM -->
+                
+                <td class="time" rowspan=2>3</td>
+                <td rowspan=3>
+                    <div class="eventSplit">
+                    <table class="half" style="height:100%;">
+                     <tr>
+                      <td class="half">
+                        <div class="eventL" style="background: #E91E63;">
+                            <a class="block" data-toggle="collapse" data-parent="#accordion" href="#secsytime"><span class="link">
+                                <div class="text">SECsy Time</div>
+                            </span></a>
+                        </div> 
+                      </td>
+                      <td class="half">
+                        <div class="eventR" style="background: #9C27B0; font-size:9px">
+                            <a class="block" data-toggle="collapse" data-parent="#accordion" href="#transitionalseminari"><span class="link">
+                                <div class="text">Transitional Seminar I</div>
+                            </span></a>
+                        </div>
+                      </td>
+                     </tr>
+                    </table>
+                    </div>
+                </td>
+                <td rowspan=3>
+                    <div class="eventSplit">
+                    <table class="half" style="height:100%;">
+                     <tr>
+                      <td class="half">
+                        <div class="eventL" style="background: #DCA828;">
+                            <a class="block" data-toggle="collapse" data-parent="#accordion" href="#askyourleaders"><span class="link">
+                                <div class="text">Ask Your Leaders</div>
+                            </span></a>
+                      </td>
+                      <td class="half">
+                        <div class="eventR" style="background: #9C27B0; font-size:9px">
+                            <a class="block" data-toggle="collapse" data-parent="#accordion" href="#transitionalseminarii"><span class="link">
+                                <div class="text">Transitional Seminar II</div>
+                            </span></a>
+                        </div>
+                      </td>
+                     </tr>
+                    </table>
+                    </div>
+                </td>
+                <td class="time" rowspan=2>3</td>
+            </tr>
+            <tr> <!-- 3.5PM -->
+                
+                <td rowspan=2>
+                    <div class="event" style="background:#4CAF50">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#froshdance"><span class="link">
+                            <div class="text">Frosh Dance</div>
+                        </span></a>
+                    </div>
+                </td>
+                <td rowspan=4>
+                    <div class="event" style="background:#9C27B0;">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#orientationconvocation"><span class="link">
+                            <div class="text">Orientation Convocation</div>
+                        </span></a>
+                    </div>
+                </td>
+            </tr>
+            <tr> <!-- 4PM -->
+                
+                <td class="time" rowspan=2>4</td>
+                <td rowspan=10>
+                    <div class="event" style="background:#DB2727;">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#residenceorientation"><span class="link">
+                            <div class="text">Residence Orientation</div>
+                        </span></a>
+                    </div>
+                </td>
+                <td rowspan=6>
+                    <div class="eventSplit">
+                    <table class="half" style="height:100%;">
+                     <tr>
+                      <td class="half">
+                        <div class="eventL" style="background: #3F51B5;">
+                            <a class="block" data-toggle="collapse" data-parent="#accordion" href="#utsuconcert"><span class="link">
+                                <div class="text">UTSU Concert</div>
+                            </span></a>
+                        </div>
+                      </td>
+                      <td class="half">
+                        <div class="eventR" style="background: #2196F3;">
+                            <a class="block" data-toggle="collapse" data-parent="#accordion" href="#chillwvusac"><span class="link">
+                                <div class="text">Chill w/ VUSAC</div>
+                            </span></a>
+                        </div>
+                      </td>
+                     </tr>
+                    </table>
+                    </div>
+                </td>
+                <td class="time" rowspan=2>4</td>
+            </tr>
+            <tr> <!-- 4.5PM -->
+                
+                <td rowspan=2>
+                    <div class="event" style="background:#DCA828">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#scavengerhunt"><span class="link">
+                            <div class="text">Scavenger Hunt</div>
+                        </span></a>
+                    </div>
+                </td>
+                <td rowspan=4>
+                    <div class="eventSplit">
+                    <table class="half" style="height:100%;">
+                     <tr>
+                      <td class="half">
+                        <div class="eventL" style="background: #EF6C00;">
+                            <a class="block" data-toggle="collapse" data-parent="#accordion" href="#froshplays"><span class="link">
+                                <div class="text">Frosh Plays</div>
+                            </span></a>
+                        </div>
+                      </td>
+                      <td class="half">
+                        <div class="eventR" style="background: #4CAF50;">
+                            <a class="block" data-toggle="collapse" data-parent="#accordion" href="#doorsopengsc"><span class="link">
+                                <div class="text">Doors Open GSC</div>
+                            </span></a>
+                        </div>
+                      </td>
+                     </tr>
+                    </table>
+                    </div>
+                </td>
+                <td rowspan=1>
+                   <!-- Whitespace -->
+                </td>
+            </tr>
+            <tr> <!-- 5PM -->
+                
+                <td class="time" rowspan=2>5</td>
+                <td rowspan=2>
+                    <div class="event" style="background:#E91E63">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#wackytackyfashionshow"><span class="link">
+                            <div class="text">Wacky Tacky Fashion Show</div>
+                        </span></a>
+                    </div>
+                </td>
+                <td class="time" rowspan=2>5</td>
+            </tr>
+            <tr> <!-- 5.5PM -->
+                
+                <td rowspan=1>
+                    <!-- Whitespace -->
+                </td>
+                <td rowspan=2>
+                    <div class="event" style="background:#EF6C00">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#alumnisocial"><span class="link">
+                            <div class="text">Alumni Social</div>
+                        </span></a>
+                    </div>
+                </td>
+            </tr>
+            <tr> <!-- 6PM --> 
+                
+                <td class="time" rowspan=2>6</td>
+                <td rowspan=3>
+                    <div class="event" style="background:#9C27B0">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#dinnerwiththedean"><span class="link">
+                            <div class="text">Dinner with the Dean</div>
+                        </span></a>
+                    </div>
+                </td>
+                <td rowspan=8>
+                    <div class="eventSplit">
+                    <table class="half" style="height:100%;">
+                     <tr>
+                      <td class="half">
+                        <div class="eventL" style="background: #32004B; height:3">
+                            <a class="block" data-toggle="collapse" data-parent="#accordion" href="#wackytackyboatcruise"><span class="link">
+                                <div class="text">Wacky Tacky Boat Cruise</div>
+                            </span></a>
+                        </div>
+                      </td>
+                      <td class="half">
+                        <div class="eventR" style="background: #F44336;">
+                            <a class="block" data-toggle="collapse" data-parent="#accordion" href="#gamesnight"><span class="link">
+                                <div class="text">Games Night</div>
+                            </span></a>
+                        </div>
+                      </td>
+                     </tr>
+                    </table>
+                    </div>
+                </td>
+                <td class="time" rowspan=2>6</td>
+            </tr>
+            <tr> <!-- 6.5PM -->
+                
+                <td rowspan=3>
+                    <!-- Whitespace -->
+                </td>
+                <td rowspan=2>
+                    <!-- Whitespace -->
+                </td>
+            </tr>
+            <tr> <!-- 7PM -->
+                
+                <td class="time" rowspan=2>7</td>
+                <td rowspan=>
+                    <!-- Whitespace -->
+                </td>
+                <td class="time" rowspan=2>7</td>
+            </tr>
+            <tr> <!-- 7.5PM -->
+                
+                <td rowspan=3>
+                    <div class="event" style="background:#3F51B5">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#dissolve"><span class="link">
+                            <div class="text">Dissolve</div>
+                        </span></a>
+                    </div>
+                </td>
+                <td rowspan=4>
+                    <div class="event" style="background:#DB2727">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#traditionalceremonies"><span class="link">
+                            <div class="text">Traditional Ceremonies</div>
+                        </span></a>
+                    </div>
+                </td>
+                <td rowspan=2>
+                    <div class="event" style="background:#4CAF50">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#closingceremonies"><span class="link">
+                            <div class="text">Closing Ceremonies</div>
+                        </span></a>
+                    </div>
+                </td>
+            </tr>
+            <tr> <!-- 8PM -->
+                
+                <td class="time" rowspan=2>8</td>
+                <td rowspan=10>
+                    <div class="eventSplit">
+                        <table class="half" style="height:100%;">
+                         <tr>
+                          <td class="half">
+                            <div class="eventL" style="background: #E91E63;">
+                                <a class="block" data-toggle="collapse" data-parent="#accordion" href="#casinonight"><span class="link">
+                                    <div class="text">Casino Night</div>
+                                </span></a>
+                            </div>
+                          </td>
+                          <td class="half">
+                            <div class="eventR" style="background: #024640;">
+                                <a class="block" data-toggle="collapse" data-parent="#accordion" href="#karaokenight"><span class="link">
+                                    <div class="text">Karaoke Night</div>
+                                </span></a>
+                            </div>
+                          </td>
+                         </tr>
+                        </table>
+                    </div>
+                </td>
+                <td class="time" rowspan=2>8</td>
+            </tr>
+            <tr> <!-- 8.5PM -->
+                
+                <td rowspan=6>
+                    <div class="event" style="background:#E91E63">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#headlinersopenmic"><span class="link">
+                            <div class="text">Headliners Open Mic</div>
+                        </span></a>
+                    </div>
+                </td>
+            </tr>
+            <tr> <!-- 9PM -->
+                
+                <td class="time" rowspan=2>9</td>
+                <td rowspan=8>
+                    <!-- Whitespace -->
+                </td>
+                <td rowspan=8>
+                    <div class="eventSplit">
+                        <table class="half" style="height:100%;">
+                         <tr>
+                          <td class="half">
+                            <div class="eventL" style="background: #009688;">
+                                <a class="block" data-toggle="collapse" data-parent="#accordion" href="#brightlightsviccity"><span class="link">
+                                    <div class="text">Bright Lights, VIC CITY</div>
+                                </span></a>
+                            </div>
+                          </td>
+                          <td class="half">
+                            <div class="eventR" style="background: #EF6C00;">
+                                <a class="block" data-toggle="collapse" data-parent="#accordion" href="#victorynight"><span class="link">
+                                    <div class="text">Victory Night</div>
+                                </span></a>
+                            </div>
+                          </td>
+                         </tr>
+                        </table>
+                    </div>
+                </td>
+                <td class="time" rowspan=2>9</td>
+            </tr>
+            <tr> <!-- 9.5PM -->
+                
+            </tr>
+            <tr> <!-- 10PM -->
+                
+                <td class="time" rowspan=2>10</td>
+                <td rowspan=6>
+                    <div class="eventSplit">
+                    <table class="half">
+                     <tr>
+                      <td class="half">
+                        <div class="eventL" style="background: #827717;">
+                            <a class="block" data-toggle="collapse" data-parent="#accordion" href="#scarletgoldparty"><span class="link">
+                                <div class="text">Scarlet & Gold Party</div>
+                            </span></a>
+                        </div>
+                      </td>
+                      <td class="half" >
+                        <div class="eventR" style="background: #F44336;">
+                            <a class="block" data-toggle="collapse" data-parent="#accordion" href="#movienight"><span class="link">
+                                <div class="text">Movie Night</div>
+                            </span></a>
+                        </div>
+                      </td>
+                     </tr>
+                    </table>
+                    </div>
+                </td>
+                <td rowspan=1></td>
+                <td class="time" rowspan=2>10</td>
+            </tr>
+            <tr> <!-- 10.5PM -->
+                
+                <td rowspan=5>
+                    <div class="event" style="background:#607D8B">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#vicbynight"><span class="link">
+                            <div class="text">Vic By Night</div>
+                        </span></a>
+                    </div>
+                </td>
+            </tr>
+            <tr> <!-- 11PM -->
+                <td class="time" rowspan=2>11</td>
+                <td class="time" rowspan=2>11</td>
+            </tr>
+            <tr> <!-- 11.5PM -->
+                
+                <td rowspan=3>
+                    <div class="event" style="background:#024640;">
+                        <a class="block" data-toggle="collapse" data-parent="#accordion" href="#utsuparty"><span class="link">
+                            <div class="text">UTSU Party</div>
+                        </span></a>
+                    </div>
+                </td>
+            </tr>
+            <tr> <!-- 12PM -->
+                <td class="time" rowspan=2>12</td>
+                <td class="time" rowspan=2>12</td>
+            </tr>
+            <tr> <!-- 12.5PM -->
+                
+            </tr>
+        </table> <!-- TABLE END -->
+
+    <div class="container">
+
+
+    <div class="panel-group" id="accordion">
+        <h2>Events</h2>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#residencemovein">Residence Move-in</a>
+                </h4>
+              </div>
+              <div id="residencemovein" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/residencemovein.jpg"></div>
+                    So you’ve made it to Victoria College – now what? Check in and get your frosh ID, Vic swag, and keys before moving into your residence building!<br><br>Location: Old Vic Foyer, your Residence Building<br>
+                </div>
+              </div>
             </div>
-            <div class="table">
-                <div class="cell">the</div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#residenceorientation">Residence Orientation</a>
+                </h4>
+              </div>
+              <div id="residenceorientation" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/residenceorientation.jpg"></div>
+                    Get to know your residence mates and find out more about what your year on campus is going to be like!<br><br>Location: Your residence floor or house common room<br>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="cell">vic</div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#commuterregistration">Commuter Registration</a>
+                </h4>
+              </div>
+              <div id="commuterregistration" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/commuterregistration.jpg"></div>
+                    Frosh kits await you along with lots of important and exciting information! Grab keys for your room if you opted to stay on residence for the week and drop off your stuff before getting your frosh week officially started!<br><br>Location: Old Vic Foyer<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#meetyourdons">Meet Your Dons</a>
+                </h4>
+              </div>
+              <div id="meetyourdons" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/meetyourdons.jpg"></div>
+                    Come and chat with your Residence and Commuter dons! They’ll be your lifelines all year long at Vic and are more than happy to answer any questions you might have.<br><br>Location: Vic Quad<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#grandmeetgreet">Grand Meet & Greet</a>
+                </h4>
+              </div>
+              <div id="grandmeetgreet" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/grandmeetgreet.jpg"></div>
+                    Meet your execs, leaders, and the students you’ll be spending orientation week with, and join your student council for a pizza lunch!<br><br>Location: Vic Quad<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#openingceremoniesdeanswelcome">Opening Ceremonies & Dean's Welcome</a>
+                </h4>
+              </div>
+              <div id="openingceremoniesdeanswelcome" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/openingceremoniesdeanswelcome.jpg"></div>
+                    Your new beginning starts here! You will be welcomed and introduced to Victoria College, signalling the start to events at Views from the Vic. You’ll hear speeches, meet Administration, and get a whole host of information about the upcoming week!<br><br>Dean’s Welcome – Come by for the launch of Vic’s new campaign! Hear from our Dean of Students Kelley Castle and President William Robins then join them afterwards for dinner in the quad.<br><br>Location: Vic Quad<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#froshdance">Frosh Dance</a>
+                </h4>
+              </div>
+              <div id="froshdance" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/froshdance.jpg"></div>
+                    Join us in the quad to learn the frosh dance!<br><br>Location: Vic Quad<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#scavengerhunt">Scavenger Hunt</a>
+                </h4>
+              </div>
+              <div id="scavengerhunt" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/scavengerhunt.jpg"></div>
+                    Race against the clock and compete against fellow frosh in Victoria College’s very own Scavenger Hunt! Work together with newfound friends to complete the most challenges  and make sure to unleash your inner Sherlock Holmes! Rain or shine, this event will happen, so please dress accordingly.<br><br>Location: Vic Quad<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#dinnerwiththedean">Dinner with the Dean</a>
+                </h4>
+              </div>
+              <div id="dinnerwiththedean" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/dinnerwiththedean.jpg"></div>
+                    Come by for free dinner with the Dean of Students before heading over to Dissolve.<br><br>Location: Vic Quad<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#dissolve">Dissolve</a>
+                </h4>
+              </div>
+              <div id="dissolve" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/dissolve.jpg"></div>
+                    Dissolve is an incredible one person play about - well, you’ll just have to come and see! Don’t miss this important, entertaining, and thought provoking experience.<br><br>Location: Isabel Bader Theatre<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#brightlightsviccity">Bright Lights, VIC CITY</a>
+                </h4>
+              </div>
+              <div id="brightlightsviccity" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/brightlightsviccity.jpg"></div>
+                    The first of many dance opportunities to come! Join us in kicking it back Top 40s style with DJ Leggitt, brought to you by our very own Vic Records!  Be sure to wear white!<br><br>Location: Old Vic – Alumni Hall<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#victorynight">Victory Night</a>
+                </h4>
+              </div>
+              <div id="victorynight" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/victorynight.jpg"></div>
+                    Done bustin’ moves at the dance? Come by for a fun night of classic boardgames and various arts and crafts and play or craft yourself in the wee hours.<br><br>Location: The Cat’s Eye<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#froshgroups">Frosh Groups</a>
+                </h4>
+              </div>
+              <div id="froshgroups" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/froshgroups.jpg"></div>
+                    To help make your Orientation week experience even better, during the Grand Meet and Greet on Monday, you’ll find yourselves in Frosh Groups! You’ll be introduced to a set of leaders and guided through various ice breakers and games with fellow frosh to get you all excited for the day!<br>But that’s not the last you’ll see of your frosh group! Every morning starting Tuesday you can reconnect with the leaders and frosh you met on Monday! You’ll have the opportunity to ask questions, talk about events and get a brief summary of what to expect for the day!<br><br>Location: Vic Quad<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#breakfastwithpresidents">Breakfast With Presidents</a>
+                </h4>
+              </div>
+              <div id="breakfastwithpresidents" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/breakfastwithpresidents.jpg"></div>
+                    Join the President of Victoria University, Professor William Robins, and the Co-Presidents of the Victoria University Students’ Administrative Council (VUSAC), Benjamin Atkins and Gabriel Zoltan-Johan, for a breakfast and some cool conversation.<br><br>Location: Burwash Dining Hall<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#registrarswelcome">Registrar's Welcome</a>
+                </h4>
+              </div>
+              <div id="registrarswelcome" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/registrarswelcome.jpg"></div>
+                    Come out to meet professionals from the Office of the Dean of Students and the Registrar’s Office who will help you navigate student life and academic challenges throughout your undergraduate degree with a special focus on your first year at Vic.<br><br>Location: Isabel Bader Theatre<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#guestlecturehumanities">Guest Lecture: Humanities</a>
+                </h4>
+              </div>
+              <div id="guestlecturehumanities" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/guestlecturehumanities.jpg"></div>
+                    Come hear mock lectures given by two professors in the humanities! This is a great opportunity to get a glimpse of what’s to come in your academic journey.<br><br>Location: Northrop Frye 003<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#guestreceptionhumanities">Guest Reception: Humanities</a>
+                </h4>
+              </div>
+              <div id="guestreceptionhumanities" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/guestreceptionhumanities.jpg"></div>
+                    Meet professors from departments all across U of T, in an informal one-on-one environment. This session will have professors from various Humanities departments. No stress, just meeting, greeting and eating!<br><br>Location: Old Vic – Foyer & Alumni Hall<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#secsytime">SECsy Time</a>
+                </h4>
+              </div>
+              <div id="secsytime" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/secsytime.jpg"></div>
+                    STOP! SECsy time! Student volunteers from U of T’s Sexual Education Centre (SEC) are here to inform us on various topics. Join us for a fun, nformative, and non-judgmental presentation on all things sex!<br><br>Location: Northrope Frye 003<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#transitionalseminari">Transitional Seminar I</a>
+                </h4>
+              </div>
+              <div id="transitionalseminari" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/transitionalseminari.jpg"></div>
+                    Get advice and tips on starting off your uni experience as a successful and involved Vickie! Sessions run back-to-back for 45mins each (pick two!): Being Ready for First Year,  Note Taking, Commuting 101, and Library 101.<br><br>Location: Old Vic<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#froshplays">Frosh Plays</a>
+                </h4>
+              </div>
+              <div id="froshplays" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/froshplays.jpg"></div>
+                    Get to know Victoria with our yearly tradition of a series of hilarious skits and scenes all about university life and etiquette, written and performed for you by your fellow Vickies! A classic Orientation Week  favourite, come to either (or both!) showings.<br><br>Location: Isabel Bader Theatre<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#doorsopengsc">Doors Open GSC</a>
+                </h4>
+              </div>
+              <div id="doorsopengsc" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/doorsopengsc.jpg"></div>
+                    Come get a tour of Vic’s very own student centre as well participate in workshop activities with VOCA, VCAA, the Arts & Crafts club, the Fencing club, and many more. Get a taste of what some of our clubs have to offer!<br><br>Location: Goldring Student Centre<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#casinonight">Casino Night</a>
+                </h4>
+              </div>
+              <div id="casinonight" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/casinonight.jpg"></div>
+                    Ready to try your luck as a new Vic student? Try your hand at one of our many casino games and sip on a mocktail as you wait for a lucky break! If your skills are a little rusty, don’t worry! There are plenty of leaders on stand-by ready to show you how to play!<br><br>Location: Old Vic<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#karaokenightlipsyncparty">Karaoke Night/Lip Sync Party</a>
+                </h4>
+              </div>
+              <div id="karaokenightlipsyncparty" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/karaokenightlipsyncparty.jpg"></div>
+                    Don’t want to test your luck? Come on out and belt out some lyrics or mouth along instead! All music tastes are more than welcome!<br><br>Location: The Cat’s Eye<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#campustoursutsuclubsfair">Campus Tours & UTSU Clubs Fair</a>
+                </h4>
+              </div>
+              <div id="campustoursutsuclubsfair" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/campustoursutsuclubsfair.jpg"></div>
+                    Excited for school but still a little confused about where things are located in and around U of T? Meet in the Quad to embark on a tour lead by our brilliant Leaders! Explore buildings across campus and check out the neighborhoods that surround it!<br><br>Location: Meet in the quad<br><strong>UTSU Clubs Day</strong> – See the myriad of clubs (over 200!) U of T has to offer and get involved outside of class-before classes! Campus tours will take you right to the Clubs Fair.<br><br>Location: UofT Front Campus<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#wellnesswednesday">Wellness Wednesday</a>
+                </h4>
+              </div>
+              <div id="wellnesswednesday" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/wellnesswednesday.jpg"></div>
+                    Want to learn about being healthy throughout the school year and ways to fight the stress? Interested in talking about mental health? Come to the various sessions that showcase what Vic has to offer during the school year!<br><br>Location: Northrop Frye 003<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#orientationconvocation">Orientation Convocation</a>
+                </h4>
+              </div>
+              <div id="orientationconvocation" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/orientationconvocation.jpg"></div>
+                    First year students will be welcomed by the President of Victoria College, the Dean of Students, and members of the Vic faculty and alumni at this historic event. This is a chance to see the various academic robes in all their glory!<br><br>You are encouraged to dress up in whatever you might be wearing<br>to traditionals - but t-shirts are also welcome.<br><br>Location: Isabel Bader Theatre (Meet in Quad)<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#alumnisocial">Alumni Social</a>
+                </h4>
+              </div>
+              <div id="alumnisocial" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/alumnisocial.jpg"></div>
+                    A wonderful afternoon of getting to know previous Vic grads. The only thing better than this opportunity might be the desserts that will be served.<br><br>Location: Old Vic – Alumni Hall<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#traditionalceremonies">Traditional Ceremonies</a>
+                </h4>
+              </div>
+              <div id="traditionalceremonies" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/traditionalceremonies.jpg"></div>
+                    Become a part of the one of the oldest traditions at Victoria College, gaining  perspective into what it is to be a Victoria student and cementing bonds of friendship and community. There are two ceremonies; one hosted by men and another hosted by women, feel free to go to whichever ceremony you feel comfortable attending.<br><br>Location: Vic Quad<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#scarletgoldparty">Scarlet & Gold Party</a>
+                </h4>
+              </div>
+              <div id="scarletgoldparty" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/scarletgoldparty.jpg"></div>
+                    Get excited for a night of dancing, lounging and keeping it classy with your fellow Victorians! Dress up semi-formal and comfortable to enjoy the night to the fullest! Buses will be provided to whisk you away to a top secret off-campus location. Leave all your belongings in residence or in commuter storage as bags will not be allowed at the venue!<br><br>Location: Meet outside the Goldring Student Centre<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#movienight">Movie Night</a>
+                </h4>
+              </div>
+              <div id="movienight" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/movienight.jpg"></div>
+                    Don’t feel like busting some moves? Come on out and settle into some comfy leather sofas and enjoy an easy-going movie night!<br><br>Location: The Cat’s Eye<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#rainbowsprinkles">Rainbow Sprinkles</a>
+                </h4>
+              </div>
+              <div id="rainbowsprinkles" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/rainbowsprinkles.jpg"></div>
+                    Calling all LGBTQ identifiers and allies alike! This is your chance to acquaint yourself with the LGBTQ resources and groups that are available at Vic, U of T, and beyond. Join us in a low-key, positive space and enjoy some ice cream!<br><br>Location: The Cat’s Eye<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#internationalstudentsreception">International Students' Reception</a>
+                </h4>
+              </div>
+              <div id="internationalstudentsreception" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/internationalstudentsreception.jpg"></div>
+                    Are you from outside of Canada or new to Toronto? This fun and informal event is just what you need! Listen to our amazing speakers, chat with upper year international students who are excited to share their experiences, and make new friends who know exactly what you are going through.<br><br>Location: Old Vic – Alumni Hall<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#brunchwithinnis">Brunch with Innis</a>
+                </h4>
+              </div>
+              <div id="brunchwithinnis" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/brunchwithinnis.jpg"></div>
+                    Join us in the Quad as we honor the longstanding relationship between Victoria and Innis with some good old-fashioned (free) brunch! Break bread -or pizza in this case- with Vic and Innis peers alike, and showcase your Vic pride with a cheer + frosh dance-off against Innis. Vic <3’s Innis!<br><br>Location: Vic Quad<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#guestlecturesciences">Guest Lecture: Sciences</a>
+                </h4>
+              </div>
+              <div id="guestlecturesciences" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/guestlecturesciences.jpg"></div>
+                    More mock lectures but this time given by two professors in the sciences! Come and get a preview of what’s to come in your academic journey.<br><br>Location: Northrop Frye 003<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#guestreceptionsciences">Guest Reception: Sciences</a>
+                </h4>
+              </div>
+              <div id="guestreceptionsciences" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/guestreceptionsciences.jpg"></div>
+                    Meet professors in an informal one-on-one event from various departments! This session will have professors from the Life, Physical,<br>and Mathematical Sciences. Come meet, greet and eat!<br><br>Location: Old Vic – Foyer/Alumni Hall<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#askyourleaders">Ask Your Leaders</a>
+                </h4>
+              </div>
+              <div id="askyourleaders" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/askyourleaders.jpg"></div>
+                    Your leaders and execs might seem like they know everything about the ’Views from the Vic’, but remember they were all frosh once! Come out and have a chat with some leaders from your area of study as you snack.<br><br>Location: Goldring Student Centre<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#transitionalseminarsii">Transitional Seminars II</a>
+                </h4>
+              </div>
+              <div id="transitionalseminarsii" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/transitionalseminarsii.jpg"></div>
+                    Another set of sessions to prepare you for university! Sessions run back-to-back for 45mins each (pick two!): Being Career Minded,  Going Abroad, Writing at University, Mental Health and Accessibility, and CCR and Student Life<br><br>Location: Old Vic<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#wackytackyfashionshow">Wacky Tacky Fashion Show</a>
+                </h4>
+              </div>
+              <div id="wackytackyfashionshow" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/wackytackyfashionshow.jpg"></div>
+                    Prep yourself for the Wacky Tacky Boat Cruise by walking down our wackier, tackier runway! Silly accessories are both welcome and provided, as well as a photo booth!<br><br>Location: Vic Quad<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#wackytackyboatcruise">Wacky Tacky Boat Cruise</a>
+                </h4>
+              </div>
+              <div id="wackytackyboatcruise" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/wackytackyboatcruise.jpg"></div>
+                    After strutting your stuff on the catwalk, take the party to the harbour front. Whether you’re on the Northern Spirit or the Kajama, get ready to dance your heart out whilst decked out in your tackiest attire. Bags and water bottles are NOT permitted, but bring your ticket, frosh ID, and tokens!<br><br>Location: Meet in the Quad<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#gamesnight">Games Night</a>
+                </h4>
+              </div>
+              <div id="gamesnight" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/gamesnight.jpg"></div>
+                    If boat cruisin’ or dancing aren’t your thing, have no fear! Join us for some more low-key board games and music and relax after dinner.<br><br>Location: The Cat’s Eye<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#vicbynight">Vic By Night</a>
+                </h4>
+              </div>
+              <div id="vicbynight" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/vicbynight.jpg"></div>
+                    Kick back after a fun night out on the lake and get to know the other side of Vic campus. There will be frequent ghost tours (to learn about who still haunt Vic campus) departing from the Goldring Student Centre, a movie screening in the Quad, and games of ’Werewolf’ held in the Cat’s Eye.<br><br>Location: Around Vic Campus<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#carnivalbbqvicclubsfair">Carnival, BBQ, Vic Clubs Fair</a>
+                </h4>
+              </div>
+              <div id="carnivalbbqvicclubsfair" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/carnivalbbqvicclubsfair.jpg"></div>
+                    Start the last day of O-Week off with a bang by coming to the carnival! There will be free food, music and tons of carnival activities! Get your Vic swag on with face painting before the UTSU Tri-Campus Parade. The carnival is a great place to hang out with friends and<br>meet new ones, so come out and let your Vic pride flourish!<br><br>Location: Vic Quad<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#utsuparade">UTSU Parade</a>
+                </h4>
+              </div>
+              <div id="utsuparade" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/utsuparade.jpg"></div>
+                    One of the most famous Orientation events the parade marches 5000 students from all three U of T campuses through downtown Toronto, walking through the city’s biggest streets and cheering as loud as possible. And it all starts off with a cheer-off between colleges at Varsity Stadium. Be sure to wear your Vic t-shirt and cheering voices!<br><br>Location: Meet in the Quad<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#utsuconcert">UTSU Concert</a>
+                </h4>
+              </div>
+              <div id="utsuconcert" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/utsuconcert.jpg"></div>
+                    As the parade comes to an end join in on the concert hosted by UTSU for some after-parade fun and mingling! There will be food vendors, give aways, raffles, games, carnival rides, and much more. Past artists include: Metric, Dragonette, and Tokyo Police Club!<br><br>Location: UofT Front Campus<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#chillwvusac">Chill w/ VUSAC</a>
+                </h4>
+              </div>
+              <div id="chillwvusac" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/chillwvusac.jpg"></div>
+                    Hang out on the quad and cool off from the parade with your VUSAC Co-Presidents and representatives! A great way to chill, play some Frisbee and soccer, and grab some refreshments before Closing Ceremonies<br><br>Location: Vic Quad<br>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#closingceremonies">Closing Ceremonies</a>
+                </h4>
+              </div>
+              <div id="closingceremonies" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div><img class="pic" src="res/closingceremonies.jpg"></div>
+                    This celebrates the end of Views from the Vic frosh, and the beginning of your view from Victoria! Come see off<br>a memorable week with new friends and great memories as you begin university life.<br><br>Location: Vic Quad<br>
+                </div>
+              </div>
+            </div>
+       </div>
+
     </div>
-    </h1>
 
-    <table id="main">
-
-        <tr class="top">
-            <td class="one"></td>
-            <td class="two"></td>
-            <td class="top"><div class="day">SUN</div><hr color=white></td>
-            <td class="top"><div class="day">MON</div><hr color=white></td>
-            <td class="top"><div class="day">TUE</div><hr color=white></td>
-            <td class="top"><div class="day">WED</div><hr color=white></td>
-            <td class="top"><div class="day">THU</div><hr color=white></td>
-            <td class="top"><div class="day">FRI</div><hr color=white></td>
-        </tr>
-        <tr> <!-- 9AM -->
-            <td class="one"></td>
-            <td class="two" rowspan=2 >9</td>
-            <td rowspan=14>
-                <div class="event" style="background:#3F51B5">
-                   <span style="margin-top:auto; margin-bottom:auto;">Residence Move-In</span>
-                </div> 
-            </td>
-        </tr>
-        <tr> <!-- 9.5AM -->
-            <td class="one"></td>
-            <td rowspan=2>
-                <div class="event" style="background: #3F51B5">Commuter Registration</div>
-            </td> 
-            <td rowspan=1>
-                <div class="event" style="background:#DCA828;">Frosh Groups</div>
-            </td>
-
-            <!-- 
-            <td rowspan=1>
-                <div class  ="event"  style="background: #DCA828">Frosh Groups</div>
-            </td> 
-            <td rowspan=1>
-                <div class="event"  style="background: #DCA828">Frosh Groups</div>
-            </td> 
-            <td rowspan=1>
-                <div class="event"  style="background: #DCA828">Frosh Groups</div>
-            </td>   -->
-        </tr> 
-        <tr> <!-- 10AM -->
-            <td class="one"></td>
-            <td class="two" rowspan=2 >10</td>
-            <td rowspan=2>
-                <div class="event"  style="background: #009688">Breakfast With Presidents</div>
-            </td>
-            <td rowspan=6>
-                <div class="event"  style="background: #3F51B5">Campus Tours<br>UTSU Clubs Fair</div>
-            </td>
-            <td rowspan=2>
-                <div class="event">
-                    <table class="half" style="height:100%;">
-                     <tr>
-                      <td class="half">
-                        <div class="eventS" style="background: Black">Rainbow Sprinkles</div>
-                      </td>
-                      <td class="half">
-                        <div class="eventS" style="background: #DB2727; font-size:6px">International Students' Reception</div>
-                      </td>
-                     </tr>
-                    </table>
-                </div>
-            </td>
-            <td rowspan=4>
-                <div class="event"  style="background: #4CAF50">Carnival, BBQ, Vic Clubs Fair</div>
-            </td>
-
-        </tr>
-        <tr> <!-- 10.5AM -->
-            <td class="one"></td>
-            <td rowspan=3>
-                <div class="event"  style="background: #EF6C00">Meet Your Dons</div>
-            </td>
-        </tr>
-        <tr> <!-- 11AM -->
-            <td class="one"></td>
-            <td class="two" rowspan=2 >11</td>
-            <td rowspan=3>
-                <div class="event"  style="background: #F44336">Registrar's Welcome</div>
-            </td>
-            <td rowspan=>
-                <div class="event"  style="background: #9C27B0">Brunch with Innis</div>
-            </td>
-        </tr>
-        <tr> <!-- 11.5AM -->
-            <td class="one"></td>
-            <td rowspan=2></td>
-        </tr>
-        <tr> <!-- 12PM -->
-            <td class="one"></td>
-            <td class="two" rowspan=2 >12</td>
-            <td rowspan=4>
-                <div class="event"  style="background: #4CAF50">Grand Meet & Greet Pizza with VUSAC</div>
-            </td>
-            <td rowspan=8>
-                <div class="event"  style="background: #DB2727">UTSU Parade</div>
-            </td>
-        </tr>
-        <tr> <!-- 12.5PM -->
-            <td class="one"></td>
-            <td rowspan=2>
-                <div class="event"  style="background: #2196F3">Guest Lecture: Humanities</div>
-            </td>
-            <td rowspan=2>
-                <div class="event" style="background: #2196F3">Guest Lecture: Sciences</div>
-            </td>
-        </tr>
-        <tr> <!-- 1PM -->
-            <td class="one"></td>
-            <td class="two" rowspan=2 >1</td>
-            <td rowspan=3>
-                <div class="event"  style="background: #4CAF50">Wellness Wednesday</div>
-            </td>
-        </tr>
-        <tr> <!-- 1.5PM -->
-            <td class="one"></td>
-            <td rowspan="3">
-                <div class="event" style="background:#3F51B5">Guest Reception: Humanities</div>
-            </td>
-            <td rowspan="3">
-                <div class="event" style="background:#3F51B5">Guest Reception: Sciences</div>
-            </td>
-        </tr>
-        <tr> <!-- 2PM -->
-            <td class="one"></td>
-            <td class="two" rowspan=2 >2</td>
-            <td rowspan=3>
-                <div class="event" style="background:#DB2727">Opening Ceremonies & Dean's Welcome</div>
-            </td>
-        </tr>
-        <tr> <!-- 2.5PM -->
-            <td class="one"></td>
-            <td rowspan=2>
-                <!-- whitespace -->
-            </td>
-        </tr>
-        <tr> <!-- 3PM -->
-            <td class="one"></td>
-            <td class="two" rowspan=2 >3</td>
-            <td rowspan=3>
-                <div class="event">
-                <table class="half" style="height:100%;">
-                 <tr>
-                  <td class="half">
-                    <div class="eventS" style="background: #E91E63; height:3">SECsy Time</div>
-                  </td>
-                  <td class="half">
-                    <div class="eventS" style="background: #9C27B0; font-size:6px">Transitional Seminar I</div>
-                  </td>
-                 </tr>
-                </table>
-                </div>
-            </td>
-            <td rowspan=3>
-                <div class="event">
-                <table class="half" style="height:100%;">
-                 <tr>
-                  <td class="half">
-                    <div class="eventS" style="background: #DCA828">Ask Your Leaders</div>
-                  </td>
-                  <td class="half">
-                    <div class="eventS" style="background: #9C27B0; font-size:6px">Transitional Seminar II</div>
-                  </td>
-                 </tr>
-                </table>
-                </div>
-            </td>
-        </tr>
-        <tr> <!-- 3.5PM -->
-            <td class="one"></td>
-            <td rowspan=2>
-                <div class="event" style="background:#4CAF50">Frosh Dance</div>
-            </td>
-            <td rowspan=4>
-                <div class="event" style="background:#9C27B0">Orientation Convocation</div>
-            </td>
-        </tr>
-        <tr> <!-- 4PM -->
-            <td class="one"></td>
-            <td class="two" rowspan=2 >4</td>
-            <td rowspan=10>
-                <div class="event" style="background:#DB2727">Residence Orientation</div>
-            </td>
-            <td rowspan=6>
-                <div class="event">
-                <table class="half" style="height:100%;">
-                 <tr>
-                  <td class="half">
-                    <div class="eventS" style="background: #3F51B5;">UTSU Concert</div>
-                  </td>
-                  <td class="half">
-                    <div class="eventS" style="background: #2196F3;">Chill w/ VUSAC</div>
-                  </td>
-                 </tr>
-                </table>
-                </div>
-            </td>
-        </tr>
-        <tr> <!-- 4.5PM -->
-            <td class="one"></td>
-            <td rowspan=2>
-                <div class="event" style="background:#DCA828">Scavenger Hunt</div>
-            </td>
-            <td rowspan=4>
-                <div class="event">
-                <table class="half" style="height:100%;">
-                 <tr>
-                  <td class="half">
-                    <div class="eventS" style="background: #EF6C00">Frosh Plays</div>
-                  </td>
-                  <td class="half">
-                    <div class="eventS" style="background: #4CAF50;">Doors Open GSC</div>
-                  </td>
-                 </tr>
-                </table>
-                </div>
-            </td>
-            <td rowspan=1>
-               <!-- Whitespace -->
-            </td>
-        </tr>
-        <tr> <!-- 5PM -->
-            <td class="one"></td>
-            <td class="two" rowspan=2 >5</td>
-            <td rowspan=2>
-                <div class="event" style="background:#E91E63">Wacky Tacky Fashion Show</div>
-            </td>
-        </tr>
-        
-        <tr> <!-- 5.5PM -->
-            <td class="one"></td>
-            <td rowspan=1>
-                <!-- Whitespace -->
-            </td>
-            <td rowspan=2>
-                <div class="event" style="background:#EF6C00">Alumni Social</div>
-            </td>
-        </tr>
-        <tr> <!-- 6PM --> 
-            <td class="one"></td>
-            <td class="two" rowspan=2>6</td>
-            <td rowspan=3>
-                <div class="event" style="background:#9C27B0">Dinner with the Dean</div>
-            </td>
-            <td rowspan=8>
-                <div class="event">
-                <table class="half" style="height:100%;">
-                 <tr>
-                  <td class="half">
-                    <div class="eventS" style="background: #E91E63; height:3">Wacky Tacky Boat Cruise</div>
-                  </td>
-                  <td class="half">
-                    <div class="eventS" style="background: #F44336;">Games Night</div>
-                  </td>
-                 </tr>
-                </table>
-                </div>
-            </td>
-        </tr>
-        <tr> <!-- 6.5PM -->
-            <td class="one"></td>
-            <td rowspan=3>
-                <!-- Whitespace -->
-            </td>
-            <td rowspan=2>
-                <!-- Whitespace -->
-            </td>
-        </tr>
-        <tr> <!-- 7PM -->
-            <td class="one"></td>
-            <td class="two" rowspan=2 >7</td>
-            <td rowspan=>
-                <div class="event" style="background:#"></div>
-            </td>
-        </tr>
-        <tr> <!-- 7.5PM -->
-            <td class="one"></td>
-            <td rowspan=3>
-                <div class="event" style="background:#3F51B5">Dissolve</div>
-            </td>
-            <td rowspan=4>
-                <div class="event" style="background:#DB2727">Traditional Ceremonies</div>
-            </td>
-            <td rowspan=2>
-                <div class="event" style="background:#4CAF50">Closing Ceremonies</div>
-            </td>
-        </tr>
-        <tr> <!-- 8PM -->
-            <td class="one"></td>
-            <td class="two" rowspan=2>8</td>
-            <td rowspan=10>
-                <div class="event">
-                    <table class="half" style="height:100%;">
-                     <tr>
-                      <td class="half">
-                        <div class="eventS" style="background: #E91E63;">Casino Night</div>
-                      </td>
-                      <td class="half">
-                        <div class="eventS" style="background: #024640;">Karaoke Night</div>
-                      </td>
-                     </tr>
-                    </table>
-                </div>
-            </td>
-        </tr>
-        <tr> <!-- 8.5PM -->
-            <td class="one"></td>
-            <td rowspan=6>
-                <div class="event" style="background:#E91E63">Headliners Open Mic</div>
-            </td>
-        </tr>
-        <tr> <!-- 9PM -->
-            <td class="one"></td>
-            <td class="two" rowspan=2>9</td>
-            <td rowspan=8>
-                <!-- Whitespace -->
-            </td>
-            <td rowspan=8>
-                <div class="event">
-                    <table class="half" style="height:100%;">
-                     <tr>
-                      <td class="half">
-                        <div class="eventS" style="background: #009688;">Bright Lights, VIC CITY</div>
-                      </td>
-                      <td class="half">
-                        <div class="eventS" style="background: #EF6C00;">Victory Night</div>
-                      </td>
-                     </tr>
-                    </table>
-                </div>
-            </td>
-        </tr>
-        <tr> <!-- 9.5PM -->
-            <td class="one"></td>
-        </tr>
-        <tr> <!-- 10PM -->
-            <td class="one"></td>
-            <td class="two" rowspan=6>10</td>
-            <td rowspan=6>
-                <div class="event">
-                <table class="half" style="height:100%;">
-                 <tr>
-                  <td class="half">
-                    <div class="eventS" style="background: #827717;">Scarlet & GOld Party</div>
-                  </td>
-                  <td class="half">
-                    <div class="eventS" style="background: #F44336;">Movie Night</div>
-                  </td>
-                 </tr>
-                </table>
-                </div>
-            </td>
-        </tr>
-        <tr> <!-- 10.5PM -->
-            <td class="one"></td>
-            <td rowspan=5>
-                <div class="event" style="background:#607D8B">Vic By Night</div>
-            </td>
-        </tr>
-        <tr> <!-- 11PM -->
-            <td class="one"></td>
-            <td class="two" rowspan=2 >11</td>
-        </tr>
-        <tr> <!-- 11.5PM -->
-            <td class="one"></td>
-            <td rowspan=3>
-                <div class="event" style="background:#024640">UTSU Party</div>
-            </td>
-        </tr>
-        <tr> <!-- 12PM -->
-            <td class="one"></td>
-            <td class="two" rowspan=2 >12</td>
-        </tr>
-        <tr> <!-- 12.5PM -->
-            <td class="one"></td>
-        </tr>
-    </table>
-
-    <img id="schedule" src="schedule.png" height=792 width=1224> 
- 
+    <a href="#main" class="back-to-top">Back to Top</a>
+  
 </body>
