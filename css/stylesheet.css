@@ -16,9 +16,22 @@
     DGreen:  #024640
 */
 
-@media (max-width: 2000px) {
-    .container { width:670px; }
+.container     { width: 100%; }
+
+@media (min-width: 768px) {
+    .container { width: 100%; }
 }
+
+@media (min-width: 992px) {
+    .container { width: 100%; }
+}
+
+@media (min-width: 1200px) {
+    .container { width: 670px; }
+}
+
+
+
 
 @font-face { font-family:'Antraste'; 
              src: url('res/Antraste.ttf'); }
@@ -74,25 +87,25 @@ td      { width: 135px;
           vertical-align: middle; 
           height: 18px; }
 
-.one    { width: 0px; }
-
-.time   { width: 5px; }
+.time   { width: 5px; 
+          font-family: Gotham;
+          font-weight: bold;  }
 
 .top    { width:135px;
           height:69px; 
           text-align:center; }
 
-.day    { font-family:'Gotham'; 
-          font-size:36px; 
-          font-weight:bold; 
-          color:white; 
-          background-color:black; 
-          width:90%; 
-          height:69px; 
-          text-align:center; 
-          line-height:69px;
-          margin:auto; 
-          margin-bottom: 4px; }
+.day    { font-family: 'Gotham'; 
+          font-size: 36px; 
+          font-weight: bold; 
+          color: white; 
+          background-color: black; 
+          width: 90%; 
+          height: 69px; 
+          text-align: center; 
+          line-height: 69px;
+          margin: auto; 
+          margin-bottom:  4px; }
 
 .event, .eventSplit, .eventL, .eventR
         { border-radius: 11px; 
