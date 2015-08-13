@@ -7,12 +7,13 @@
     <script src="js/misc.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/jquery-scrollto/lib/jquery-scrollto.js"></script>
+    <script src="js/jquery.textfill.min.js"></script>
 </head>
 <body> 
 
     <div align=middle>
         <img id="title" src="res/title.png" >
-    </div>
+    </div> 
 
     <div class="table-container">
         <table id="main"> <!-- TABLE START -->
@@ -24,12 +25,12 @@
             </tr>
             <tr class="top">
                 <td class="time"></td>
-                <td class="top"><div class="day">SUN</div></td>
-                <td class="top"><div class="day">MON</div></td>
-                <td class="top"><div class="day">TUE</div></td>
-                <td class="top"><div class="day">WED</div></td>
-                <td class="top"><div class="day">THU</div></td>
-                <td class="top"><div class="day">FRI</div></td>
+                <td class="top"><a class="day" href="#SUN">SUN</a></td>
+                <td class="top"><a class="day" href="#MON">MON</a></td>
+                <td class="top"><a class="day" href="#TUE">TUE</a></td>
+                <td class="top"><a class="day" href="#WED">WED</a></td>
+                <td class="top"><a class="day" href="#THU">THU</a></td>
+                <td class="top"><a class="day" href="#FRI">FRI</a></td>
             </tr>
             <tr> <!-- 9AM -->
                 
@@ -37,7 +38,7 @@
                 <td rowspan=14>
                     <div class="event" style="background:#3F51B5">
                         <a class="block" data-toggle="collapse" data-parent="#accordion" href="#residencemovein"><span class="link">
-                            <div class="text">Residence Move-In</div>
+                            <div class="text">Residence<br>Move-In</div>
                         </span></a>
                     </div>
                 <td colspan=5>
@@ -317,7 +318,7 @@
                 <td rowspan=10>
                     <div class="event" style="background:#DB2727;">
                         <a class="block" data-toggle="collapse" data-parent="#accordion" href="#residenceorientation"><span class="link">
-                            <div class="text">Residence Orientation</div>
+                            <div class="text">Residence<br>Orientation</div>
                         </span></a>
                     </div>
                 </td>
@@ -617,6 +618,7 @@
 
     <div class="panel-group" id="accordion">
         <h2>Events</h2>
+            <h3 id="SUN">Sunday</h3>
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h4 class="panel-title">
@@ -643,6 +645,7 @@
                 </div>
               </div>
             </div>
+            <h3 id="MON">Monday</h3>
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h4 class="panel-title">
@@ -773,6 +776,7 @@
                 </div>
               </div>
             </div>
+            <h3 id="TUE">Tuesday</h3>
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h4 class="panel-title">
@@ -916,6 +920,7 @@
                 </div>
               </div>
             </div>
+            <h3 id="WED">Wednesday</h3>
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h4 class="panel-title">
@@ -1007,6 +1012,7 @@
                 </div>
               </div>
             </div>
+            <h3 id="THU">Thursday</h3>
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h4 class="panel-title">
@@ -1150,6 +1156,7 @@
                 </div>
               </div>
             </div>
+            <h3 id="FRI">Friday</h3>
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h4 class="panel-title">
@@ -1220,5 +1227,15 @@
     </div>
 
     <a href="#main" class="back-to-top">Back to Top</a>
-  
+
+    <script>
+/*        $('body').flowtype({
+               minimum   : 100,
+               maximum   : 250,
+               minFont   : 15,
+               maxFont   : 25,
+               fontRatio : 30
+        }); */
+    </script>  
+
 </body>
