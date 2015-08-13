@@ -118,6 +118,7 @@ td      {
           font-weight: 500; 
           color: white;
           font-size: 0.8em;
+          font-size: 100%;
           position: relative;
 
           transition: all .2s;
@@ -130,10 +131,14 @@ td      {
           top: 50%;
           left: 50%;
           width: 95%;
-          font-size: 100%;
           transform: translate(-50%, -50%); 
           -webkit-transform: translate(-50%, -50%); /* Safari */
           word-wrap: break-word; }
+
+.small  
+        { font-size: 0.8em; }
+
+.block  { font-size: inherit; }
 
 .half   { border: none;
           padding: 0;
@@ -141,37 +146,36 @@ td      {
           width: 45%; }
 
 table.half
-        { height:100%;
+        { height: 100%;
           width: 100%; }
 
 .event:hover, .eventL:hover, .eventR:hover
         { transform: scale(1.04); } 
 
-.eventL { width:99%; 
-          height:100%;  }
+.eventL { width: 99%; 
+          height: 100%;  }
 
-.eventR { width:99%; 
-          height:100%;  
-          float:right; }
+.eventR { width: 99%; 
+          height: 100%;  
+          float: right; }
 
 .cell   { font-family:Antraste; size: 98.78px; }
 
 a       { color: inherit; }
 
-a:visited, a.day:hover
+a.block:visited, a.day:hover
         { color: white; }
 
-a.block:hover
-        { color: inherit; 
-          text-decoration: underline; }
-
-.link   { position:absolute;
+.link   { position: absolute;
           width: 100%;
           height: 100%;
           top: 0;
-          left:0;
+          left: 0;
         
           z-index: 1; }
+
+.panel-heading
+        { display: block; }
 
 a.back-to-top 
         { display: none;
