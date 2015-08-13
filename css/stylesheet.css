@@ -163,7 +163,7 @@ table.half
 
 a       { color: inherit; }
 
-a.block:visited, a.day:hover
+a.block:visited, a.day:hover, a.block:hover
         { color: white; }
 
 .link   { position: absolute;
