@@ -78,15 +78,14 @@ table, tr, td
           text-align: center; 
           vertical-align: top; }
 
-tr      { height: 13px; }
+tr      { height: 15px; }
 
-td      { 
-          border: 2px solid transparent; 
+td      { border: 2px solid transparent; 
           border-left: 5px solid transparent;
           padding: 1px; 
           margin: 0px; 
-          vertical-align: middle; 
-          height: 18px; }
+          vertical-align: middle;  
+          height: inherit; }
 
 .time   { width: 5px; 
           font-family: Gotham;
@@ -96,7 +95,7 @@ td      {
           height:69px; 
           text-align:center; }
 
-.day    { font-family: Helvetica Neue; 
+.day    { font-family: Gotham, Helvetica Neue; 
           font-size: 36px; 
           font-weight: bold; 
           color: white; 
@@ -120,7 +119,6 @@ td      {
           font-weight: 500; 
           color: white;
           font-size: 0.8em;
-          font-size: 100%;
           position: relative;
 
           transition: all .2s;
@@ -166,7 +164,7 @@ table.half
 
 a       { color: inherit; }
 
-a.block:visited, a.day:hover, a.block:hover
+a.event:hover, a.eventL, a.eventR
         { color: white; }
 
 .link   { position: absolute;
@@ -200,6 +198,7 @@ a.back-to-top
           border-radius: 100%; 
           background-size: 100% 100%; }
 
+/* Phone view */
 @media (max-width: 670px) {
     .container { width: 100%; }
     .table-container { width: 100%; }
@@ -207,8 +206,8 @@ a.back-to-top
     .td        { width: 300px; }    
 }
 
-@media (min-width: 1040px) {
-    .container { width: 670px; }
-    .table-container { width: 1040px; }
+/* Normal view */
+@media (min-width: 670px) {
+    .container       { width: 670px; }
+    .table-container { width: 670px; }
 }
-
