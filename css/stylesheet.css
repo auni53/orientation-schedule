@@ -32,11 +32,11 @@ html    { font-family: Gotham, Helvetica, Arial, sans-serif; }
 
 @font-face 
         { font-family:'Antraste'; 
-           src: url('res/Antraste.ttf'); }
+           src: url('../res/Antraste.ttf'); }
 
 @font-face 
-        { font-family:'Gothamm';
-          src: url('res/Gotham-Bold.otf'); }
+        { font-family:'Gotham';
+          src: url('../res/Gotham-Bold.otf'); }
 
 #title  { width: 960px; 
           margin-left: auto; 
