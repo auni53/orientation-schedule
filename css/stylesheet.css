@@ -226,7 +226,6 @@ a.back-to-top
 @media (min-width: 670px) {
     #title           { width: 960px; }
     .container       { width: 670px; }
-    .table-container { width: 1040px; }
 }
 
 @media (max-width: 970px) {
