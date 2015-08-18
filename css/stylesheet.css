@@ -43,7 +43,9 @@ html    { font-family: Gotham, Helvetica, Arial, sans-serif; }
           margin-right: auto;
           margin-top: 15px; }
 
-body    { background-color:#f3eedd; }
+body    { background: transparent url('../res/rainbow.png') repeat; } 
+
+body    { background-color: #f6f4ee, #f3eedd; } 
 
 h1      { font-family:'Antraste'; 
           font-size:75.38px; 
@@ -85,7 +87,7 @@ td      { border: none;
           text-align: center;  }
 
 .time   { width: 5px; 
-          font-family: Gotham;
+          font-family: Gotham, Helvetica Neue, Arial, sans-serif;
           font-weight: bold;  }
 
 .top    { width:135px;
