@@ -175,6 +175,11 @@ table.half
         { height: 100%;
           width: 100%; }
 
+.event-time
+        { float: right;
+          font-weight: normal; 
+          color: rgba(0, 0, 0, 0.6); }
+
 a.event, a.eventL, a.eventR, a.day
         { color: white; }
 
