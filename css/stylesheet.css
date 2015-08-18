@@ -176,7 +176,7 @@ a.back-to-top
           text-indent: -9999px;
           position: fixed;
           z-index: 999;
-          background: transparent url("../res/backtotop.png") no-repeat center 100%; } /* top-button.png */
+          background: transparent url("../res/top-button.png") no-repeat center 100%; } /* top-button.png */
 
 @media (min-width: 700px) {
     a.back-to-top {
