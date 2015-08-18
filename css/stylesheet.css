@@ -211,9 +211,9 @@ a.back-to-top
 @media (max-width: 670px) {
     #parent    { width: 100vw; }
     .container { width: 100vw; }
-    .table-container { width: 100vw; }
-    #title     { width: 100%; }
+    .table-container { width: 98vw; }
     .td        { width: 300px; }    
+    .top       { width: 45vw; }
 }
 
 /* Normal view */
@@ -224,6 +224,6 @@ a.back-to-top
 }
 
 @media (max-width: 970px) {
-    #title      {width: 100%; } 
+    #title      {width: 95%; } 
 
 }
