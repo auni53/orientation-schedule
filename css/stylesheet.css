@@ -43,9 +43,7 @@ html    { font-family: Gotham, Helvetica, Arial, sans-serif; }
           margin-right: auto;
           margin-top: 15px; }
 
-body    { background: transparent url('../res/rainbow.png') repeat; } 
-/*
-body    { background-color: #f6f4ee, #f3eedd; }  */
+body    { background-color: #f6f4ee, #f3eedd; } 
 
 h1      { font-family:'Antraste'; 
           font-size:75.38px; 
