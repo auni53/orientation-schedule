@@ -18,14 +18,12 @@
 
 html    { font-family: Gotham, Helvetica, Arial, sans-serif; }
 
-#parent { width: 100vw;  }
 
 .container
         { width: 100%; }
 
 .table-container
-        { display: table;
-          margin-left: auto;
+        { margin-left: auto;
           margin-right: auto;
           overflow: scroll; 
           width: 100vw; }
@@ -221,8 +219,12 @@ a.back-to-top
 
 /* Normal view */
 @media (min-width: 670px) {
+    #title           { width: 960px; }
     .container       { width: 670px; }
-    .table-container { width: 670px; }
+    .table-container { width: 1040px; }
 }
 
-.table-container { width: 50px; overflow: scroll; } 
+@media (max-width: 970px) {
+    #title      {width: 100%; } 
+
+}
