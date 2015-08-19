@@ -18,12 +18,6 @@
 
 html    { font-family: Gotham, Helvetica, Arial, sans-serif; }
 
-.all-container
-        { width: 100%; margin: auto; }
-
-.times
-        { float: left; clear: both; }
-
 .table-container
         { margin-left: auto;
           margin-right: auto;
@@ -76,7 +70,7 @@ h3      { font-family:'Gotham', Helvetica, Arial, sans-serif;
 
 tr      { height: 15px; }
 
-td      { border: 1px solid black;
+td      { border: none;
           border-left: 5px solid transparent;
           padding: 1px; 
           margin: 0px; 
@@ -84,12 +78,9 @@ td      { border: 1px solid black;
           height: inherit; 
           text-align: center;  }
 
-.time, .time-row
-        { width: 5px; 
+.time   { width: 5px; 
           font-family: Gotham, Helvetica Neue, Arial, sans-serif;
-          font-weight: bold; clear:both; }
-
-.time-row
+          font-weight: bold;  }
 
 .top    { width:135px;
           height:69px; }
