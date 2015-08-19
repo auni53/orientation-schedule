@@ -140,8 +140,9 @@ td      { border: none;
           height: 100%;  
           float: right; }
 
-.small  
-        { font-size: 0.8em; }
+.small  { font-size: 0.8em; }
+
+.big    { font-size: 1.2em; }
 
 /* This class somehow maintains cell size on the 
    half-events. I have no idea why. 
