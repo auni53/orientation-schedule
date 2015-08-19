@@ -175,8 +175,13 @@ table.half
         { height: 100%;
           width: 100%; }
 
+.event-title
+        { display: inline-flex; 
+          width: 10.5em; }
+
 .event-time
-        { float: right;
+        { display: inline-flex;
+          float: right;
           font-weight: normal; 
           color: rgba(0, 0, 0, 0.6); }
 
