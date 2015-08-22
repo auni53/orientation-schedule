@@ -28,18 +28,16 @@
     <div class="table-container" align="middle">
         <table id="main" > <!-- TABLE START -->
             <tr>
-                <td class="time"></td>
 
             </tr>
 
             <tr>
-                <td class="time"></td>
                 <td class="event" colspan=8>
                     <!-- Whitespace -->
                 </td>
             </tr>
             <tr class="top">
-                <td class="time"></td>
+                <td class="time"></td> 
                 <td class="top"><a class="day" href="#SUN">SUN</a></td>
                 <td class="top"><a class="day" href="#MON">MON</a></td>
                 <td class="top"><a class="day" href="#TUE">TUE</a></td>
@@ -385,13 +383,18 @@
                 <td rowspan=3>
                     <!-- Whitespace -->
                 </td>
-                <td rowspan=2>
+                <td rowspan=1>
                     <!-- Whitespace -->
                 </td>
             </tr>
             <tr> <!-- 7PM -->
                 
                 <td class="time" rowspan=2>7</td>
+                <td rowspan=5>
+                    <a class="event" data-toggle="collapse" data-parent="accordion" style="background:#DB2727" href="#traditionalceremonies">
+                        Traditional Ceremonies
+                    </a>
+                </td>
                 <td rowspan=>
                     <!-- Whitespace -->
                 </td>
@@ -402,11 +405,6 @@
                 <td rowspan=3>
                     <a class="event big" data-toggle="collapse" data-parent="accordion" style="background:#3F51B5" href="#dissolve">
                         Dissolve
-                    </a>
-                </td>
-                <td rowspan=4>
-                    <a class="event" data-toggle="collapse" data-parent="accordion" style="background:#DB2727" href="#traditionalceremonies">
-                        Traditional Ceremonies
                     </a>
                 </td>
                 <td rowspan=2>
@@ -473,7 +471,6 @@
                 <td class="time" rowspan=2>9</td>
             </tr>
             <tr> <!-- 9.5PM -->
-                
             </tr>
             <tr> <!-- 10PM -->
                 
@@ -531,9 +528,10 @@
     </div>
 </div>
 
-
     <hr>
     <div class="container">
+
+
 
     <div class="panel-group" id="accordion">
         <h2>Events</h2><h3 id="SUN">Sunday</h3>
@@ -919,7 +917,7 @@
               <a data-toggle="collapse" data-parent="#accordion" href="#traditionalceremonies" class="panel-heading">
                  <h4 class="panel-title">
                     <span class="event-title">Traditional Ceremonies</span>
-                    <span class="event-time">7:30 pm</span>
+                    <span class="event-time">7:00 pm</span>
                  </h4>
               </a>
               <div id="traditionalceremonies" class="panel-collapse collapse">

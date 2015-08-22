@@ -21,7 +21,7 @@ html    { font-family: Gotham, Helvetica, Arial, sans-serif; }
 .table-container
         { margin-left: auto;
           margin-right: auto;
-          overflow: scroll; 
+          overflow-x: scroll; 
           height: 100%; }
 
 @font-face 
@@ -80,7 +80,7 @@ td      { border: none;
 
 .time   { width: 5px; 
           font-family: Gotham, Helvetica Neue, Arial, sans-serif;
-          font-weight: bold;  }
+          font-weight: bold; }
 
 .top    { width:135px;
           height:69px; }
@@ -122,6 +122,13 @@ td      { border: none;
           -webkit-transition: all 0.18s; /* Safari and Chrome */
           -o-transition: all 0.18s; /* Opera */
           -ms-transition: all 0.18s; /* IE9 (maybe) */  }
+
+/*
+.event, .eventSplit, .eventL, .eventR 
+        { background: url("http://i.imgur.com/6bnpvSq.gif") !important; 
+          background-size: contain !important; 
+          color: black !important; font-weight: bold; }
+ */       
 
 /* Enables event expansion upon hover */
 .event:hover, .eventL:hover, .eventR:hover
