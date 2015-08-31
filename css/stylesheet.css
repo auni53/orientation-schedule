@@ -76,6 +76,11 @@ td      { border: none;
           height: inherit; 
           text-align: center;  }
 
+/* Firefox-specific bug with flex box expansion */
+@-moz-document url-prefix() {
+    td  { height: 100%; padding: 2px; }
+}
+
 .time   { width: 5px; 
           font-family: Gotham, Helvetica Neue, Arial, sans-serif;
           font-weight: bold; }
@@ -114,6 +119,7 @@ td      { border: none;
           /* Attempted Firefox solution */ 
           display: -moz-box;
           -moz-box-orient: vertical;
+          -moz-box-align: center;
 
           font-family: Helvetica Neue, Arial, sans-serif;
           font-weight: 500; 
@@ -148,29 +154,6 @@ td      { border: none;
 .small  { font-size: 0.8em; }
 
 .big    { font-size: 1.2em; }
-
-/* This class somehow maintains cell size on the 
-   half-events. I have no idea why. 
-   ...
-.link   { position: ;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0;
-        
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          
-          display: -webkit-flex;
-          -webkit-justify-content: center;
-          -webkit-align-items: center;
-         
-          z-index: 1; }
-
-.link:hover
-        { text-decoration: underline; }
-*/
 
 .half   { border: none;
           padding: 0;
