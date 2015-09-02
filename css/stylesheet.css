@@ -18,6 +18,8 @@
 
 html    { font-family: Gotham, Helvetica, Arial, sans-serif; }
 
+#add    { position: absolute; right: 0; }
+
 .table-container
         { margin-left: auto;
           margin-right: auto;
