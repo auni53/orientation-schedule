@@ -108,16 +108,16 @@ td      { border: none;
           width: 100%; 
           height: 100%; 
 
-          /* Chrome and normal */
-          display: flex; 
-          justify-content: center; 
-          align-items: center;
-
           /* Safari */
           display: -webkit-flex; 
           -webkit-justify-content: center;
           -webkit-align-items: center;
     
+          /* Chrome and normal */
+          display: flex; 
+          justify-content: center; 
+          align-items: center;
+
           /* Attempted Firefox solution */ 
           display: -moz-box;
           -moz-box-orient: vertical;
